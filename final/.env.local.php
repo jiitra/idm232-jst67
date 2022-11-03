@@ -1,9 +1,9 @@
 <?php
 
 $APP_CONFIG = [
-    'environment' => 'production',
+    'environment' => 'development',
     'site_name' => 'Visions of Sugarplums',
-    'site_url' => 'https://jilltracymedia.com/idm232/final',
+    'site_url' => 'http://localhost:8888/final',
     'database_host' => 'localhost',
     'database_user' => 'root',
     'database_pass' => 'root',
