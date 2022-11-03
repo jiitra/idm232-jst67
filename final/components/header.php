@@ -1,4 +1,7 @@
 <?php
+
+include_once 'app.php';
+
 if (!isset($page_title)){
 
     $page_title = 'blah';
@@ -22,15 +25,11 @@ $document_title = $page_title . ' | ' . $site_title;
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700">
 
 </head>
-<header>
-    <div class="header_wrapper"> 
-        <a class="header_link" href="index.php">
-            visions of <b id="header_link_special">sugarplums</b>
-        </a>
-    </div>
-</header>
+ 
+
 
 <body>
+    <?php include 'nav-main.php'?>
     <script src="main.js"></script>
 </body>
 </html>

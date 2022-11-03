@@ -27,6 +27,23 @@ header {
     justify-items: center;
 }
 
+.recipe_list{
+  color:var(--surface-secondary);
+  line-height: 2rem;
+}
+
+.recipe_list_ul{
+  list-style-type:disc;
+}
+
+.recipe_list_ol{
+  list-style-type: decimal;
+}
+
+.spacer{
+  margin-bottom: 2rem;
+}
+
 #page_title {
   margin-top: 2rem;
   margin-bottom: 6rem;
@@ -35,11 +52,26 @@ header {
 #page_title h1 {
   font-size: 6rem;
   font-weight: 700;
+  text-align: center;
 }
 
 #page_title p {
   margin-top: 2rem;
   color: var(--surface-secondary);
+}
+
+#recipe-img{
+  padding-bottom: 2rem;
+  margin: auto;
+  overflow: hidden;
+  object-fit: cover;
+  max-width: 800px;
+}
+
+.page{
+  max-width: 900px;
+  margin: auto;
+  width: 100%;
 }
 
 .header_wrapper {
