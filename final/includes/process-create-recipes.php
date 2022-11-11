@@ -21,7 +21,7 @@ $result = add_recipe(
 
 // Check there are no errors with our SQL statement
 if ($result) {
-    redirect_to('/admin/recipes/index.php');
+    redirect_to('/admin/recipes');
 } else {
     $error_message = 'Sorry there was an error creating the user';
     redirect_to('/admin/users?error=' . $error_message);
