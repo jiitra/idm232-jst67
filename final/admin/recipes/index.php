@@ -1,6 +1,7 @@
 <?php
 
 include_once __DIR__ . '/../../app.php';
+
 $page_title = 'Recipes';
 include_once __DIR__ . '/../../components/header.php';
 ?>
@@ -12,5 +13,15 @@ $result = mysqli_query($db_connection, $query);
 
 ?>
 
+<div>
+    <div>
+    <button type="button">
+    <a href="<?php echo site_url() . '/admin/recipes/create.php' ?>">
+            Add user</a></button>
+    </div>
+    <div>
+    </div>
+</div>
 
-<?php include_once __DIR__ . '/../../_components/footer.php';
+
+<?php include_once __DIR__ . '/../../components/footer.php';

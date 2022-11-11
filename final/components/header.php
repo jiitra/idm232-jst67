@@ -1,7 +1,5 @@
 <?php
 
-include_once 'app.php';
-
 if (!isset($page_title)){
 
     $page_title = 'blah';
