@@ -46,7 +46,7 @@ if ($result->num_rows > 0) {
 
     <input type="submit" value="submit">
 
-    <input type="hidden" name="id" value="">
+    <input type="hidden" name="id" value="<?php echo $recipe['id']?>">
 </form>
 
 <?php include_once __DIR__ . '/../../components/footer.php';
