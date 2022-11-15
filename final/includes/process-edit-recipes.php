@@ -1,6 +1,5 @@
 <?php
 include __DIR__ . '/../app.php';
-include 'recipes-functions.php';
 
 if (!$_POST) {
     die('Unauthorized');
