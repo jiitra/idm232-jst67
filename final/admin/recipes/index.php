@@ -4,6 +4,8 @@ include_once __DIR__ . '/../../app.php';
 
 $page_title = 'Recipes';
 include_once __DIR__ . '/../../components/header.php';
+include_once __DIR__ . '/../../includes/recipes-functions.php';
+$recipes = get_recipes();
 ?>
 
 <?php
@@ -17,7 +19,11 @@ $result = mysqli_query($db_connection, $query);
     <div>
     <button type="button">
     <a href="<?php echo site_url() . '/admin/recipes/create.php' ?>">
-            Add user</a></button>
+        Add recipe</a>
+    </button>
+
+    <?php include __DIR__ . '/../../components/table-recipes.php'; ?>
+
     </div>
     <div>
     </div>
