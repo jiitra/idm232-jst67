@@ -4,9 +4,13 @@ include_once __DIR__ . '/../../app.php';
 
 $page_title = 'Recipes';
 include_once __DIR__ . '/../../components/header.php';
-include_once __DIR__ . '/../../includes/recipes-functions.php';
 $recipes = get_recipes();
 ?>
+
+<form action="<?php echo site_url(); ?>/admin/search" method="GET">
+    <input type="text" name="search" id="search" placeholder="Search">
+    <button type="submit">Search</button>
+</form>
 
 <?php
 // get RECIPES data from database
