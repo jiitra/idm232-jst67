@@ -30,6 +30,10 @@ $result = mysqli_query($db_connection, $query);
         <label for="">How To</label>
         <input type="text" name="howto">
     </div>
+    <div>
+        <label for="">Image Path</label>
+        <input type="text" name="img">
+    </div>
 
     <input
     

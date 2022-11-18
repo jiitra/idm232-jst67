@@ -43,6 +43,10 @@ if ($result->num_rows > 0) {
         <label for="">How To</label>
         <input type="text" name="howto" value="<?php echo $recipe['howto']?>">
     </div>
+    <div>
+        <label for="">Image Path</label>
+        <input type="text" name="img" value="<?php echo $recipe['img']?>">
+    </div>
 
     <input type="submit" value="submit">
 
