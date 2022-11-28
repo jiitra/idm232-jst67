@@ -4,9 +4,9 @@ include_once __DIR__ . '/app.php';
 
 $page_title = 'Recipes';  
 $header = 'Cookie Recipes';
-$card_text = 'Mom&apos;s Sugar Cookies';
+/* $card_text = 'Mom&apos;s Sugar Cookies';
 $img = "img/sugar-cookies.png";
-$link = "recipe.php";
+$link = "recipe.php"; */
 
 
 include_once __DIR__ . '/components/header.php';

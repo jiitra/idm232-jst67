@@ -29,7 +29,7 @@ if (!isset($recipes)) {
             <td>{$recipe['description']}</td>
             <td>{$recipe['ingredients']}</td>
             <td>{$recipe['howto']}</td>
-            <td>{$recipe['img']}</td>
+            <td><img src='{$site_url}{$recipe['img']} alt = ''></td>
             <td >
               <a href='{$site_url}/admin/recipes/edit.php?id={$recipe['id']}'>Edit</a>
               <a href='{$site_url}/admin/recipes/delete.php?id={$recipe['id']}' >Delete</a>
