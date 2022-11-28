@@ -20,7 +20,7 @@ $result = mysqli_query($db_connection, $query);
     </div>
     <div>
         <label for="">Description</label>
-        <input type="text" name="description">
+        <textarea class="js-tinymce" name="ingredients" id="" cols="30" rows="10"></textarea>
     </div>
     <div>
         <label for="">Ingredients</label>
