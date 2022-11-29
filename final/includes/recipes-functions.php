@@ -18,14 +18,15 @@ function get_recipes()
  * @param  string $last_name - last name of the user
  * @param  string $email - email of the user
  * @param  string $phone - phone number of the user
+ *  @param  string $phone - phone number of the user
  * @return object - mysqli_result
  */
-function add_recipe($title_value, $description_value, $ingredients_value, $howto_value)
+function add_recipe($title_value, $description_value, $ingredients_value, $howto_value, $img_value)
 {
     global $db_connection;
     $query = 'INSERT INTO recipes';
-    $query .= ' (title, description, ingredients, howto)';
-    $query .= " VALUES ('$title_value', '$description_value', '$ingredients_value', '$howto_value')";
+    $query .= ' (title, description, ingredients, howto, img)';
+    $query .= " VALUES ('$title_value', '$description_value', '$ingredients_value', '$howto_value', '$img_value')";
 
     $result = mysqli_query($db_connection, $query);
     return $result;
