@@ -20,7 +20,7 @@ $result = mysqli_query($db_connection, $query);
     </div>
     <div>
         <label for="">Description</label>
-        <textarea class="js-tinymce" name="ingredients" id="" cols="30" rows="10"></textarea>
+        <input type="text" name="ingredients">
     </div>
     <div>
         <label for="">Ingredients</label>
@@ -41,4 +41,4 @@ $result = mysqli_query($db_connection, $query);
 </form>
 
 
-              <?php include_once __DIR__ . '/../../components/footer.php';
+<?php include_once __DIR__ . '/../../components/footer.php';
