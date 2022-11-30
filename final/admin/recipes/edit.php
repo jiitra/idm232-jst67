@@ -24,6 +24,7 @@ if ($result->num_rows > 0) {
 
 ?>
 
+
 <h1>Edit Recipe</h1>
 
 <form action="<?php echo site_url(); ?>/includes/process-edit-recipes.php" method="POST">
