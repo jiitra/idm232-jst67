@@ -2,7 +2,7 @@
 
 include_once __DIR__ . '/../../app.php';
 
-$page_title = 'Recipes';
+$page_title = 'Admin Recipes';
 include_once __DIR__ . '/../../components/header.php';
 $recipes = get_recipes();
 ?>

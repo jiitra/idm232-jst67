@@ -20,6 +20,7 @@ $document_title = $page_title . ' | ' . $site_title;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php echo $document_title; ?></title>
     <link rel="stylesheet" href="reset.css"/>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <style>
     <?php include "style.css" ?>
     </style>

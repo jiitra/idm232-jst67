@@ -6,11 +6,11 @@ if (!$_POST) {
 }
 
 // Store $_POST data to variables for readability
-$title_value = $_POST['title'];
-$description_value = $_POST['description'];
-$ingredients_value = $_POST['ingredients'];
-$howto_value = $_POST['howto'];
-$img_value = $_POST['img'];
+$title_value = sanitize_value($_POST['title']);
+$description_value = sanitize_value($_POST['description']);
+$ingredients_value = sanitize_value($_POST['ingredients']);
+$howto_value = sanitize_value($_POST['howto']);
+$img_value = sanitize_value($_POST['img']);
 
 $result = add_recipe(
     $title_value,

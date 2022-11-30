@@ -3,10 +3,17 @@
 //__DIR__ helps paths stay stable in prod
 include_once __DIR__ . '/app.php';
 
+$site_url = site_url();
+
+$recipes = get_recipes();
+
 $page_title = 'Home';  
 $header = 'Recipes';
 $caption = 'All the recipes you love, at your fingertips.';
-$link="recipes.php";
+
+while ($recipe = mysqli_fetch_array($recipes)) {
+$link="{$site_url}/recipe.php?id={$recipe['id']}";
+}
 
 $recipes = get_recipes();
 // get recipes data from database
