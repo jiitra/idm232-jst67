@@ -13,6 +13,13 @@ $result = mysqli_query($db_connection, $query);
 
 ?>
 
+<script>
+      tinymce.init({
+        selector: '#mytextarea'
+      });
+</script>
+
+
 <form action="<?php echo site_url(); ?>/includes/process-create-recipes.php" method="POST">
     <div>
         <label for="">Title</label>
@@ -20,8 +27,9 @@ $result = mysqli_query($db_connection, $query);
     </div>
     <div>
         <label for="">Description</label>
-        <textarea class="js-tinymce" name="description" id="" cols="30"
-                  rows="10"></textarea>
+        <textarea class="mytextarea" name="description" id="" cols="30"
+            rows="10">
+        </textarea>
     </div>
     <div>
         <label for="">Ingredients</label>

@@ -26,7 +26,7 @@ if (!isset($recipes)) {
           <tr>
             <td>{$recipe['id']}</td>
             <td>{$recipe['title']}</td>
-            <td>{$recipe['description']}</td>
+            <td id='description'>{$recipe['description']}</td>
             <td>{$recipe['ingredients']}</td>
             <td>{$recipe['howto']}</td>
             <td><img src='{$site_url}{$recipe['img']} alt = ''></td>

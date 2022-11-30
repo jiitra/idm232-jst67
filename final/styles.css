@@ -20,6 +20,10 @@ header {
   padding: 2rem;
 }
 
+#description{
+  max-width: 300px;
+}
+
 .centered{
     align-items: center;
     display: grid;

@@ -28,11 +28,6 @@ if ($results->num_rows > 0) {
 ?>
 
 <h1 >Search Results</h1>
-    <form action="<?php echo site_url(); ?>/admin/search" method="GET">
-        <input type="text" name="search" id="search" placeholder="Search"
-        value="<?php echo $search; ?>">
-        <button type="submit">Search</button>
-    </form>
     <h2>You searched for "<?php echo $search; ?>"</h2>
     <?php
     // If no results, echo no results

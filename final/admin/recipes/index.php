@@ -7,11 +7,6 @@ include_once __DIR__ . '/../../components/header.php';
 $recipes = get_recipes();
 ?>
 
-<form action="<?php echo site_url(); ?>/admin/search" method="GET">
-    <input type="text" name="search" id="search" placeholder="Search">
-    <button type="submit">Search</button>
-</form>
-
 <?php
 // get RECIPES data from database
 $query = 'SELECT * FROM recipes';
