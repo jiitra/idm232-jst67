@@ -28,6 +28,8 @@ $document_title = $page_title . ' | ' . $site_title;
    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700">
 
+    <script src="https://cdn.tiny.cloud/1/tpflc8aehr6pmt8cxudxkgy0wric0ltl4eptwin82fg9gpg2/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
 </head>
  
 

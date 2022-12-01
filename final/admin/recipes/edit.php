@@ -34,11 +34,16 @@ if ($result->num_rows > 0) {
     </div>
     <div>
         <label for="">Description</label>
-        <input type="text" name="description" value="<?php echo $recipe['description']?>">
+        <textarea class="mytextarea" name="description" id="" cols="30"
+            rows="10" value="<?php echo $recipe['description']?>">
+        </textarea>
     </div>
     <div>
         <label for="">Ingredients</label>
-        <input type="text" name="ingredients" value="<?php echo $recipe['ingredients']?>">
+        
+       <!--  edit not echoing -->
+        <textarea class="mytextarea" name="ingredients" value="<?php echo $recipe['ingredients']?>">
+        </textarea>
     </div>
     <div>
         <label for="">How To</label>

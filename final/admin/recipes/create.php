@@ -33,11 +33,15 @@ $result = mysqli_query($db_connection, $query);
     </div>
     <div>
         <label for="">Ingredients</label>
-        <input type="text" name="ingredients">
+        <textarea class="mytextarea" name="ingredients" id="" cols="30"
+            rows="10">
+        </textarea>
     </div>
     <div>
         <label for="">How To</label>
-        <input type="text" name="howto">
+        <textarea class="mytextarea" name="howto" id="" cols="30"
+            rows="10">
+        </textarea>
     </div>
     <div>
         <label for="">Image Path</label>
