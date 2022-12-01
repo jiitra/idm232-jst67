@@ -26,6 +26,7 @@ if ($result->num_rows > 0) {
 
     $page_title = $recipe['title'];
     $header = $page_title;
+    $caption = $recipe['description'];
     $img = $recipe['img'];
 
 /* $page_title = 'Mom&apos;s Sugar Cookies';  

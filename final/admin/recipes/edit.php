@@ -42,7 +42,8 @@ if ($result->num_rows > 0) {
         <label for="">Ingredients</label>
         
        <!--  edit not echoing -->
-        <textarea class="mytextarea" name="ingredients" value="<?php echo $recipe['ingredients']?>">
+        <textarea name="ingredients" cols="30"
+            rows="10" value="<?php echo $recipe['ingredients']?>">
         </textarea>
     </div>
     <div>

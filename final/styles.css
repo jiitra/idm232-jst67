@@ -74,8 +74,10 @@ header {
 }
 
 .page{
+  box-sizing: border-box;
   max-width: 900px;
   margin: auto;
+  padding: 0 2rem;
   width: 100%;
 }
 
