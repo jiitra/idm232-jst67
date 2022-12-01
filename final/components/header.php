@@ -21,10 +21,11 @@ $document_title = $page_title . ' | ' . $site_title;
     <title><?php echo $document_title; ?></title>
     <link rel="stylesheet" href="reset.css"/>
     <link rel="icon" type="image/png" href="img/favicon.png" />
-    <style>
-    <?php include "style.css" ?>
-    </style>
-    <!-- <link rel="stylesheet" href="<?php echo site_url(); ?>styles.css?v=<?php echo time(); ?>"/> -->
+
+
+    <link rel="stylesheet" href="<?php echo site_url(); ?>styles.css?v=<?php echo time(); ?>"/>
+
+   
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700">
 
 </head>

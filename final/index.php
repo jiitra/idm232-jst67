@@ -11,10 +11,6 @@ $page_title = 'Home';
 $header = 'Recipes';
 $caption = 'All the recipes you love, at your fingertips.';
 
-while ($recipe = mysqli_fetch_array($recipes)) {
-$link="{$site_url}/recipe.php?id={$recipe['id']}";
-}
-
 $recipes = get_recipes();
 // get recipes data from database
 $query = 'SELECT * FROM recipes';
