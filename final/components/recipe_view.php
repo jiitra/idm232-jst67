@@ -3,7 +3,6 @@
     <?php echo "<img src=$img />"; ?>
 </div>
 
-<!-- static for now - change later -->
 <div class="page">
     <h2 class="grid_header">Ingredients</h2>
     <ul class="recipe_list recipe_list_ul">

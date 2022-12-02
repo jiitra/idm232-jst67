@@ -16,7 +16,7 @@ $result = mysqli_query($db_connection, $query);
 
 <div>
     <div>
-    <button type="button">
+    <button type="button" class="margin">
     <a href="<?php echo site_url() . '/admin/recipes/create.php' ?>">
         Add recipe</a>
     </button>

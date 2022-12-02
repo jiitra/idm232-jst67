@@ -24,39 +24,42 @@ if ($result->num_rows > 0) {
 
 ?>
 
+<div id="page_title" class="centered">
+    <h1>Edit Recipe</h1>
+</div>
 
-<h1>Edit Recipe</h1>
-
-<form action="<?php echo site_url(); ?>/includes/process-edit-recipes.php" method="POST">
-    <div>
-        <label for="">Title</label>
-        <input type="text" name="title" value="<?php echo $recipe['title']?>">
+<form id="form" action="<?php echo site_url(); ?>/includes/process-edit-recipes.php" method="POST">
+    <div class="input-section">
+        <div>
+            <label class="input-label" for="">Title</label>
+        </div>
+        <input class="search" type="text" name="title" value="<?php echo $recipe['title']?>">
     </div>
-    <div>
-        <label for="">Description</label>
+    <div class="input-section">
+        <label class="input-label" for="">Description</label>
         <textarea class="mytextarea" name="description" id="" cols="30"
             rows="10">
             <?php echo $recipe['description']?>
         </textarea>
     </div>
-    <div>
-        <label for="">Ingredients</label>
+    <div class="input-section">
+        <label class="input-label" for="">Ingredients</label>
         
         <textarea name="ingredients" cols="30"
             rows="10" >
             <?php echo $recipe['ingredients']?>
         </textarea>
     </div>
-    <div>
-        <label for="">How To</label>
+    <div class="input-section">
+        <label class="input-label"  for="">How To</label>
         <textarea name="howto" cols="30"
             rows="10" >
             <?php echo $recipe['howto']?>
         </textarea>
     </div>
-    <div>
-        <label for="">Image Path</label>
-        <input type="text" name="img" value="<?php echo $recipe['img']?>">
+    <div class="input-section">
+        <label  class="input-label" for="">Image Path</label>
+        <input class="search" type="text" name="img" value="<?php echo $recipe['img']?>">
     </div>
 
     <input class="button" type="submit" value="submit">
