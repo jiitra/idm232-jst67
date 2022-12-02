@@ -13,6 +13,6 @@
     <h2 class="grid_header">How To Make</h2>
 
     <ol class="recipe_list recipe_list_ol">
-    <?php echo $recipe['howto']?>
+        <?php echo $recipe['howto']?>
     </ol>
 </div>

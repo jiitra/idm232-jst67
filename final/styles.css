@@ -20,8 +20,57 @@ header {
   padding: 2rem;
 }
 
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table, th, td{
+  border: 2px solid var(--card);
+}
+
+td{
+  vertical-align:middle;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 4px;
+}
+
+
+a, a:visited{
+  color: var(--brand);
+}
+
+button, button a:visited, button a, .button{
+  background-color: var(--surface-secondary);
+  color: var(--background);
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+li{
+  margin-bottom: 1rem;
+}
+
+#search{
+  background-color: var(--background);
+  border: 1px solid var(--surface-secondary);
+  color: var(--surface-primary);
+  padding: 0.8rem 1.5rem;
+}
+
 #description{
   max-width: 300px;
+}
+
+#table-img{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
 }
 
 .centered{
@@ -40,7 +89,7 @@ header {
   list-style-type:disc;
 }
 
-.recipe_list_ol{
+ol{
   list-style-type: decimal;
 }
 
@@ -54,6 +103,7 @@ header {
 }
 
 #page_title h1 {
+  box-sizing: border-box;
   font-size: 5rem;
   font-weight: 700;
   text-align: center;

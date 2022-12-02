@@ -35,27 +35,31 @@ if ($result->num_rows > 0) {
     <div>
         <label for="">Description</label>
         <textarea class="mytextarea" name="description" id="" cols="30"
-            rows="10" value="<?php echo $recipe['description']?>">
+            rows="10">
+            <?php echo $recipe['description']?>
         </textarea>
     </div>
     <div>
         <label for="">Ingredients</label>
         
-       <!--  edit not echoing -->
         <textarea name="ingredients" cols="30"
-            rows="10" value="<?php echo $recipe['ingredients']?>">
+            rows="10" >
+            <?php echo $recipe['ingredients']?>
         </textarea>
     </div>
     <div>
         <label for="">How To</label>
-        <input type="text" name="howto" value="<?php echo $recipe['howto']?>">
+        <textarea name="howto" cols="30"
+            rows="10" >
+            <?php echo $recipe['howto']?>
+        </textarea>
     </div>
     <div>
         <label for="">Image Path</label>
         <input type="text" name="img" value="<?php echo $recipe['img']?>">
     </div>
 
-    <input type="submit" value="submit">
+    <input class="button" type="submit" value="submit">
 
     <input type="hidden" name="id" value="<?php echo $recipe['id']?>">
 </form>

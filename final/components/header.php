@@ -19,11 +19,12 @@ $document_title = $page_title . ' | ' . $site_title;
     <meta charset="UTF=8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php echo $document_title; ?></title>
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet"href="<?php echo site_url(); ?>/reset.css?v=<?php echo time(); ?>"/>
+    
+    <link rel="icon" type="image/png" href=" <?php echo site_url();?>/img/favicon.png"/>
 
 
-    <link rel="stylesheet" href="<?php echo site_url(); ?>styles.css?v=<?php echo time(); ?>"/>
+    <link rel="stylesheet" href="<?php echo site_url(); ?>/styles.css?v=<?php echo time(); ?>"/>
 
    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700">
