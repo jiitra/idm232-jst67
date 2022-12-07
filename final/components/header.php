@@ -38,4 +38,3 @@ $document_title = $page_title . ' | ' . $site_title;
     <?php include 'nav-main.php'?>
     <script src="main.js"></script>
 </body>
-</html>
