@@ -54,7 +54,7 @@ $caption = "You searched for: <strong> $search </strong>";
             $img = $recipes_result['img'];
             echo "<a href='{$site_url}/recipe.php?id={$recipes_result['id']}'>
             <div class='card'>
-                <img src='../../$img'/>
+                <img src='../../$img' alt=''>
                 <h1>$card_text</h1>
             </div>
             </a>";
@@ -62,11 +62,6 @@ $caption = "You searched for: <strong> $search </strong>";
       }
 ?>
 </section>
-
-  </div>
-</div>
-
-
 
 <?php include_once __DIR__ . '/../../components/footer.php';
 ?>
