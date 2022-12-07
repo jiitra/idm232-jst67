@@ -16,10 +16,8 @@ $result = mysqli_query($db_connection, $query);
 
 <div>
     <div>
-    <button type="button" class="margin">
-    <a href="<?php echo site_url() . '/admin/recipes/create.php' ?>">
+    <a class="button margin" href="<?php echo site_url() . 'admin/recipes/create.php' ?>">
         Add recipe</a>
-    </button>
 
     <?php include __DIR__ . '/../../components/table-recipes.php'; ?>
 

@@ -21,8 +21,8 @@ if (!isset($recipes)) {
     $site_url = site_url();
     while ($recipe = mysqli_fetch_array($recipes)) {
         echo "
-        <div style='overflow-x:auto; overflow-y: auto;'>
-            <tr>
+        <div>
+            <tr style='overflow-x:auto; overflow-y: auto;'>
               <td>{$recipe['id']}</td>
               <td>{$recipe['title']}</td>
               <td id='description'>{$recipe['description']}</td>
