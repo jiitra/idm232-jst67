@@ -18,36 +18,50 @@ $query .= " OR description LIKE '%{$search}%'";
 $query .= " OR ingredients LIKE '%{$search}%'";
 $query .= " OR howto LIKE '%{$search}%'";
 
-$results = mysqli_query($db_connection, $query);
-if ($results->num_rows > 0) {
-    $recipes_results = true;
+$result = mysqli_query($db_connection, $query);
+if ($result->num_rows > 0) {
+    $recipes_result = true;
 } else {
-    $recipes_results = false;
+    $recipes_result = false;
 }
 
-?>
+$header = "Search Results";
+$caption = "You searched for: <strong> $search </strong>";
 
-<h1 >Search Results</h1>
-    <h2>You searched for "<?php echo $search; ?>"</h2>
-    <?php
+?>
+<?php include __DIR__ . '/../../components/big_header.php'; ?>
+
+<?php
     // If no results, echo no results
-    if (!$recipes_results) {
-        echo '<p>No results found</p>';
+    if (!$recipes_result) {
+        echo '<p class="centered">No results found</p>';
     }
 ?>
-        <?php
+
+<?php
 // If error query param exist, show error message
   if (isset($_GET['error'])) {
       echo '<p>' . $_GET['error'] . '</p>';
   }?>
 
+<section class="grid">
     <?php
-      if ($recipes_results) {
-          while ($recipes_results = mysqli_fetch_assoc($results)) {
-              echo '<h2>' . $recipes_results['title'] . '</h2>';
+    $site_url = site_url();
+
+      if ($recipes_result) {
+          while ($recipes_result = mysqli_fetch_assoc($result)) {
+            $card_text = $recipes_result['title'];
+            $img = $recipes_result['img'];
+            echo "<a href='{$site_url}/recipe.php?id={$recipes_result['id']}'>
+            <div class='card'>
+                <img src='../../$img'/>
+                <h1>$card_text</h1>
+            </div>
+            </a>";
           }
       }
 ?>
+</section>
 
   </div>
 </div>

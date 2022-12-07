@@ -5,7 +5,6 @@ include_once __DIR__ . '/app.php';
 
 $site_url = site_url();
 
-$recipes = get_recipes();
 
 $page_title = 'Home';  
 $header = 'Recipes';

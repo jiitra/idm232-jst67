@@ -1,5 +1,4 @@
 <?php
-include_once 'components/header.php';
 
 if (!isset($header)){
 
