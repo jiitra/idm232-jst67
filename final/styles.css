@@ -7,6 +7,11 @@
   --surface-secondary: #aba1e3;
 }
 
+* {
+  border: none;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--background);
   color: var(--surface-primary);
@@ -21,6 +26,7 @@ header {
   background-color: var(--nav);
   display: block;
   padding: 2rem;
+  width: 100%;
 }
 
 table {
@@ -226,4 +232,19 @@ ol{
 
 .margin{
   margin: 1rem;
+}
+
+@media screen and (max-width:  768px) {
+
+  img{
+    max-height: 300px;
+  }
+
+  #page_title h1{
+    font-size: 3rem;
+  }
+
+  #caption-div{
+    padding: 0 0.5rem ;
+  }
 }
