@@ -15,7 +15,7 @@
   </script>
 
 <p class="centered" style="margin-bottom: 4rem; margin-top: 2rem;">
-Visions of Sugarplums | Jillian Tracy &copy<?php echo date ('Y'); ?>
+Visions of Sugarplums | Jillian Tracy &copy;<?php echo date ('Y'); ?>
 <p>
 
 </body>
