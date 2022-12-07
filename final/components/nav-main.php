@@ -10,7 +10,7 @@
         </a>
 
         <form action="<?php echo site_url(); ?>/admin/search" method="GET">
-            <input id="search" type="text" name="search" id="search" placeholder="Search">
+            <input id="search" type="text" name="search" placeholder="Search">
             <button class="margin" type="submit">Search</button>
         </form>
     </div>
