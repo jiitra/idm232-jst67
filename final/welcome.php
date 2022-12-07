@@ -25,6 +25,6 @@ include_once __DIR__ . '/components/header.php';?>
 <h2 class="centered grid_header">
     <a href="index.php" style="
     color: var(--brand);">See All Recipes</a>
-<h2>
+</h2>
 
 <?php include_once __DIR__ . '/components/footer.php'; ?>
