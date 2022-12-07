@@ -24,39 +24,39 @@ $result = mysqli_query($db_connection, $query);
 </div>
 
 <form id="form" action="<?php echo site_url(); ?>/includes/process-create-recipes.php" method="POST">
-    </br>
+    <br>
     <div class="input-section">
         <div>
-            <label class="input-label" for="">Title</label>
+            <label class="input-label" for="title">Title</label>
         </div>
         <input class="search" type="text" name="title">
     </div>
     <div class="input-section">
-        <label  class="input-label" for="">Description</label>
-        <textarea class="mytextarea" name="description" id="" cols="30"
+        <label  class="input-label" for="description">Description</label>
+        <textarea class="mytextarea" name="description"  cols="30"
             rows="10">
         </textarea>
     </div>
     <div class="input-section">
-        <label class="input-label" for="">Ingredients</label>
-        <textarea class="mytextarea" name="ingredients" id="" cols="30"
+        <label class="input-label" for="ingredients">Ingredients</label>
+        <textarea class="mytextarea" name="ingredients" cols="30"
             rows="10">
         </textarea>
     </div>
     <div class="input-section">
-        <label class="input-label" for="">How To</label>
-        <textarea class="mytextarea" name="howto" id="" cols="30"
+        <label class="input-label" for="howto">How To</label>
+        <textarea class="mytextarea" name="howto" cols="30"
             rows="10">
         </textarea>
     </div>
     <div class="input-section">
         <div>
-            <label class="input-label" for="">Image Path</label>
+            <label class="input-label" for="image path">Image Path</label>
         </div>
         <input class="search" type="text" name="img">
     </div>
 
-    <input class = "button"type="submit" value="submit">
+    <input class = "button" type="submit" value="submit">
 </form>
 
 
