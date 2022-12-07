@@ -17,7 +17,7 @@ if (!isset($img)){
         $img = $recipe['img'];
         echo "<a href='{$site_url}/recipe.php?id={$recipe['id']}'>
             <div class='card'>
-                <img src=$img />
+                <img src=$img alt=''>
                 <h1>$card_text</h1>
             </div>
         </a>";
